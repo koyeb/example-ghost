@@ -1,5 +1,3 @@
-[![example-ghost](https://github.com/koyeb/example-ghost/actions/workflows/deploy.yaml/badge.svg)](https://github.com/koyeb/example-ghost/actions)
-
 <div align="center">
   <a href="https://koyeb.com">
     <img src="https://www.koyeb.com/static/images/icons/koyeb.svg" alt="Logo" width="80" height="80">
