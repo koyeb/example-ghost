@@ -66,15 +66,13 @@ If you want to customize and enhance this application, you need to fork this rep
 
 If you used the **Deploy to Koyeb** button, you can simply link your service to your forked repository to be able to push changes.  Alternatively, you can manually create the application as described below.
 
-On the [Koyeb Control Panel](//app.koyeb.com/apps), click the **Create App** button to go to the App creation page.
+On the [Koyeb Control Panel](//app.koyeb.com/apps), on the **Overview** tab, click the **Create Web Service** button to begin.
 
-1. Select `GitHub` as the deployment method to use.
+1. Select **GitHub** as the deployment method.
 2. In the repositories list, select the repository you just forked.
-3. Specify the branch to deploy, in this case `main`.
-4. Give your Service a name, i.e `example-ghost`.
-5. Choose the `Dockerfile` builder for the repository.
-6. Change the port value to 2368.
-7. Set the following environment variables:
+3. In the **Builder** section, select **Dockerfile**.
+4. In the **Exposed ports** section, change the port value to **2368**.
+7. In the **Environment variables** section, set the following environment variables:
     - `url`: The URL where ghost will be accessible.Must have the format: `https://<YOUR_APP_NAME>-<KOYEB_ORG_NAME>.koyeb.app`.
     - `database__connection__host`: The hostname where MySQL database is running.
     - `database__connection__port`: The MySQL database port.
@@ -83,7 +81,7 @@ On the [Koyeb Control Panel](//app.koyeb.com/apps), click the **Create App** but
     - `mail__options__auth__user`: Your Mailgun SMTP login.
     - `mail__options__auth__pass`: Your Mailgun SMTP password.
     - `CLOUDINARY_URL`: The Cloudinary connection URL.
-8. Give your App a name, i.e `example-ghost`, and click **Deploy**.
+8. Choose a name for your App and Service, i.e `example-ghost`, and click **Deploy**.
 
 You will be taken to the deployment page where you can follow the build of your Ghost blog. Once the build is completed, your application will be deployed and you will be able to access it via `<YOUR_APP_NAME>-<YOUR_ORG_NAME>.koyeb.app`.
 
