@@ -13,5 +13,6 @@ RUN set -ex; \
     su-exec node ghost config storage.ghost-storage-cloudinary.upload.overwrite false; \
     su-exec node ghost config storage.ghost-storage-cloudinary.fetch.quality auto; \
     su-exec node ghost config storage.ghost-storage-cloudinary.fetch.cdn_subdomain true; \
+    su-exec node ghost config storage.ghost-storage-cloudinary.fetch.secure true; \
     su-exec node ghost config mail.transport "SMTP"; \
     su-exec node ghost config mail.options.service "Mailgun";
